@@ -1,7 +1,6 @@
 import { useFetch } from "../hooks/useFetch";
 import { Card } from "../components";
 import { useTitle } from "../hooks/useTitle";
-import { data } from "autoprefixer";
 
 export const Movielist = ({api,title}) => {
   const { data: movies } = useFetch(api);

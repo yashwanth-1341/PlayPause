@@ -9,7 +9,7 @@ export  const MovieDetail=()=> {
   const image = data.poster_path ? `https://image.tmdb.org/t/p/w500/${data.poster_path}` : Backup ;
  
   useTitle(data.title)
-  
+
   useEffect(()=>
   {
     async function fetchmovie()
@@ -19,7 +19,7 @@ export  const MovieDetail=()=> {
       Setdata(data);
     }
     fetchmovie()
-  },[])
+  },[params.id])
 
   useTitle(data.title)
 
